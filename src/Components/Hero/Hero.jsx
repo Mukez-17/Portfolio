@@ -50,14 +50,14 @@ function Hero() {
                     <button type='button'><a href="#Portfolio">See the Latest Works</a></button>
                     <button type='button'><a href="#Contact">Contact Me</a></button>
                 </motion.div>
-                <motion.img src="/scroll.png" alt="" variants={textVariants} animate="scrollButton" />
+                <motion.img src="public/scroll.png" alt="" variants={textVariants} animate="scrollButton" />
             </motion.div>
         </div>
         <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
             Front End Developer and Java Developer
         </motion.div>
         <div className="imageContainer">
-            <img src="/Mukesh.png" alt="" />
+            <img src="public/Mukesh.png" alt="" />
         </div>
     </div>
   )

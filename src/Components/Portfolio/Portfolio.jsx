@@ -6,35 +6,35 @@ const items = [
     {
         id:1,
         title:"Swirts - Casual Wear Shopping Website",
-        img:"/Swirts.png",
+        img:"public/Swirts.png",
         desc:"Swirts, a trendy casual wear brand, approached me to design and develop a modern e-commerce website that would showcase their latest clothing collections and provide a seamless online shopping experience for their customers.",
         link:"https://mukez-17.github.io/Frontend-Task-Three/"
     },
     {
         id:2,
         title:"Custom Cart E-Commerce",
-        img:"/Custom_E_cart.png",
+        img:"public/Custom_E_cart.png",
         desc:"I am designed and developing a fully customized e-commerce platform that would provide businesses with a tailored online shopping experience, catering to their unique requirements and branding needs.",
         link:"https://mukez-17.github.io/Frontend-Task-Five/"
     },
     {
         id:3,
         title:"Weather App",
-        img:"/Weather_app.png",
+        img:"public/Weather_app.png",
         desc:"A cross-platform mobile application called WeatherWise, designed to provide users with accurate and up-to-date weather information for their current location or any desired city worldwide.",
         link:"https://mukez-17.github.io/Weather_app/"
     },
     {
         id:4,
         title:"Tic Tac Toe Game",
-        img:"/Tic_Tac_Toe.png",
+        img:"public/Tic_Tac_Toe.png",
         desc:"A visually appealing and user-friendly implementation of the classic Tic Tac Toe game, aptly named TicTacToe Pro. The game offers a modern and engaging experience while retaining the simplicity and familiarity of the beloved pastime.",
         link:"https://mukez-17.github.io/Tic-Tac-Toe/"
     },
     {
         id:5,
         title:"Rick and Morty Character Wiki",
-        img:"/Rick_and_Morty.png",
+        img:"public/Rick_and_Morty.png",
         desc:`As an avid fan of the popular animated series "Rick and Morty," I embarked on a project to create a comprehensive online wiki dedicated to cataloging and documenting all the characters from the show's ever-expanding multiverse.`,
         link:"https://mukez-17.github.io/Rick-and-Morty/"
     }

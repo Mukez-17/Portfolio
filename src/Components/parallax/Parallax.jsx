@@ -30,7 +30,7 @@ function Parallax({ type }) {
         <motion.div 
           style={{
             y:yBg, 
-            background: `url(${type==="services" ? "/planets.png" : "/sun.png"})`, 
+            background: `url(${type==="services" ? "public/planets.png" : "public/sun.png"})`, 
             backgroundSize:"cover", 
             backgroundPosition:"bottom"
           }} 
