@@ -117,10 +117,10 @@
 
         @include sMobile{
             height: 50%;
-            width: 80%;
+            width: 58%;
             top: unset;
             bottom: 0;
-            right: 8%;
+            right: 18%;
         }
 
         @include mMobile{
@@ -132,14 +132,15 @@
 
         @include lMobile{
             height: 50%;
-            width: 50%;
+            width: 45%;
             top: unset;
             bottom: 0;
             right: 25%;
         }
 
         @include tablet{
-            width: 60%;
+            width: 50%;
+            right: 0;
         }
 
         @include sLaptop{
