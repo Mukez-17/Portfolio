@@ -1,0 +1,155 @@
+@import '../../app.scss';
+
+.hero{
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+    position: relative;
+
+    .wrapper{
+        max-width:1200px;
+        height: 100%;
+        margin: auto;
+    }
+
+    .textContainer{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+
+        @include sMobile{
+            height: 50%;
+            width: 100%;
+            gap: 20px;
+            align-items: center;
+            text-align: center;
+            margin-left: 10px;
+        }
+
+        @include mMobile{
+            height: 50%;
+            width: 100%;
+            gap: 20px;
+            align-items: center;
+            text-align: center;
+            margin-left: 10px;
+        }
+
+        @include lMobile{
+            height: 50%;
+            width: 100%;
+            gap: 20px;
+            align-items: center;
+            text-align: center;
+            margin-left: 10px;
+        }
+
+        @include tablet{
+            margin-left: 50px;
+            max-width: 650px;
+        }
+
+        @include sLaptop{
+            margin-left: 50px;
+        }
+
+        h2{
+            font-size: 30px;
+            color: rebeccapurple;
+            letter-spacing: 10px;
+        }
+
+        h1{
+            font-style: 88px;
+
+            @include sMobile{
+                font-size: 20px;
+            }
+
+            @include mMobile{
+                font-size: 20px;
+            }
+
+            @include lMobile{
+                font-size: 20px;
+            }
+        }
+
+        .buttons{
+            button{
+                padding: 20px;
+                border: 1px solid white;
+                border-radius: 10px;
+                background-color: transparent;
+                color: white;
+                margin-right: 20px;
+                cursor: pointer;
+                font-weight: 300;
+            }
+        }
+
+        img{
+            width: 50px;
+        }
+    }
+
+    .slidingTextContainer{
+        position: absolute;
+        font-size: 40vh;
+        bottom: -50px;
+        white-space: nowrap;
+        color: #ffffff09;
+        width: 150%;
+        font-weight: bold;
+    }
+
+    .imageContainer{
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include sMobile{
+            height: 50%;
+            width: 80%;
+            top: unset;
+            bottom: 0;
+            right: 8%;
+        }
+
+        @include mMobile{
+            height: 50%;
+            width: 50%;
+            top: unset;
+            bottom: 0;
+        }
+
+        @include lMobile{
+            height: 50%;
+            width: 50%;
+            top: unset;
+            bottom: 0;
+            right: 25%;
+        }
+
+        @include tablet{
+            width: 60%;
+        }
+
+        @include sLaptop{
+            right: -5%;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

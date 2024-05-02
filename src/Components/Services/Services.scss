@@ -1,0 +1,282 @@
+@import '../../App.scss';
+
+.services{
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .textContainer{
+        flex: 1;
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        @include sMobile{
+            align-self: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        @include mMobile{
+            align-self: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        @include lMobile{
+            align-self: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        p{
+            font-weight: 200;
+            font-size: 14px;
+            color: gray;
+            text-align: right;
+        }
+        
+        hr{
+            width: 350px;
+            border: none;
+            border-top: 0.5px solid gray;
+
+            @include sMobile{
+                width: 300px;
+                padding-bottom: 10px;
+            }
+
+            @include tablet{
+                width: 200px;
+            }
+        }
+    }
+
+    .titleContainer{
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include sMobile{
+            width: 100%;
+        }
+
+        .title{
+            display: flex;
+            align-items: center;
+            gap: 50px;
+
+            @include sMobile{
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            @include mMobile{
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            @include lMobile{
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            img{
+                width: 240px;
+                height: 70px;
+                border-radius: 50px;
+                object-fit: cover;
+
+                @include sMobile{
+                    width: 150px;
+                    height: 40px;
+                }
+
+                @include mMobile{
+                    width: 150px;
+                    height: 40px;
+                }
+
+                @include lMobile{
+                    width: 150px;
+                    height: 40px;
+                }
+
+                @include tablet{
+                    width: 200px;
+                    height: 60px;
+                }
+            }
+
+            h1{
+                font-size: 66px;
+                font-weight: 100;
+
+                @include sMobile{
+                    font-size: 30px;
+                }
+
+                @include mMobile{
+                    font-size: 30px;
+                }
+
+                @include lMobile{
+                    font-size: 30px;
+                }
+
+                @include tablet{
+                    font-size: 45px;
+                }
+            }
+
+            button{
+                width: 240px;
+                height: 70px;
+                border-radius: 50px;
+                background-color: orange;
+                border: none;
+                font-size: 24px;
+                cursor: pointer;
+
+                @include sMobile{
+                    font-size: 16px;
+                    height: 40px;
+                    width: 150px;
+                }
+
+                @include mMobile{
+                    font-size: 16px;
+                    height: 40px;
+                    width: 150px;
+                }
+                
+                @include lMobile{
+                    font-size: 16px;
+                    height: 40px;
+                    width: 150px;
+                }
+
+                @include tablet{
+                    font-size: 16px;
+                    height: 60px;
+                    width: 200px;
+                }
+
+                @include lMobile{
+                    font-size: 16px;
+                    height: 40px;
+                    width: 150px;
+                }
+            }
+        }
+    }
+
+    .aboutContainer{
+        flex: 2;
+        display: grid;
+        max-width: 1000px;
+        margin: auto auto 50px;
+
+        @include tablet{
+            padding: 20px;
+        }
+
+        @include sLaptop{
+            padding: 20px;
+        }
+        
+        .about{
+            text-align: justify;
+            padding: 10px;
+
+            @include sLaptop{
+                font-size: 21px;
+            }
+
+            @include lLaptop{
+                font-size: 25px;
+            }
+        }
+
+        .container{
+            display: flex;
+
+            @include sMobile{
+                flex-direction: column;
+                width: 100%;
+            }
+
+            @include mMobile{
+                flex-direction: column;
+                width: 100%;
+            }
+
+            @include lMobile{
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .box{
+                padding: 35px;
+                border: 0.5px solid gray;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                @include sMobile{
+                    border: none;
+                    padding: 12px;
+                }
+
+                @include mMobile{
+                    border: none;
+                    padding: 12px;
+                }
+
+                @include lMobile{
+                    border: none;
+                    padding: 12px;
+                }
+
+                @include tablet{
+                    padding: 15px;
+                }
+
+                h2{
+                    @include lLaptop{
+                        font-size: 28px;
+                    }
+                }
+
+                p{
+                    @include sMobile{
+                        display: none;
+                    }
+
+                    @include mMobile{
+                        display: none;
+                    }
+
+                    @include lMobile{
+                        display: none;
+                    }
+
+                    @include sLaptop{
+                        font-size: 20px;
+                    }
+
+                    @include lLaptop{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

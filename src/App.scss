@@ -1,0 +1,73 @@
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0c0c1d;
+    color: lightgray;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+section{
+    height: 100vh;
+}
+
+.course{
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: #fff;
+    }
+}
+
+@mixin sMobile{
+    @media (max-width:330px) {
+        @content;
+    }
+}
+
+@mixin mMobile{
+    @media (min-width:331px) and (max-width:375px) {
+        @content;
+    }
+}
+
+@mixin lMobile{
+    @media (min-width:375px) and (max-width:480px) {
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media (min-width:485px) and (max-width:768px) {
+        @content;
+    }
+}
+
+@mixin sLaptop{
+    @media (min-width:770px) and (max-width:1024px) {
+        @content;
+    }
+}
+
+@mixin lLaptop{
+    @media (min-width:1030px) and (max-width:1440px) {
+        @content;
+    }
+}

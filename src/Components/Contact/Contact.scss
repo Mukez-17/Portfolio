@@ -1,0 +1,193 @@
+@import '../../App.scss';
+
+.contact{
+    height: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    @include sMobile{
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 40px;
+    }
+
+    @include mMobile{
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 40px;
+    }
+
+    @include lMobile{
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 40px;
+    }
+
+    @include tablet{
+        padding: 50px;
+    }
+
+    @include sLaptop{
+        padding: 50px;
+    }
+
+    .textContainer{
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @include sMobile{
+            gap: 20px;
+            text-align: center;
+            align-items: center;
+        }
+
+        @include mMobile{
+            gap: 20px;
+            text-align: center;
+            align-items: center;
+        }
+
+        @include lMobile{
+            gap: 20px;
+            text-align: center;
+            align-items: center;
+        }
+
+        h1{
+            font-size: 80px;
+            line-height: 68px;
+
+            @include sMobile{
+                font-size: 36px;
+                line-height: 30px;
+            }
+
+            @include mMobile{
+                font-size: 36px;
+                line-height: 30px;
+            }
+
+            @include lMobile{
+                font-size: 36px;
+                line-height: 30px;
+            }
+
+            @include tablet{
+                font-size: 50px;
+                line-height: 50px;
+            }
+        }
+
+        span{
+            font-weight: 300;
+        }
+    }
+
+    .formContainer{
+        flex:1;
+        position: relative;
+        
+        @include sMobile{
+            padding: 30px;
+            width: 100%;
+        }
+
+        @include mMobile{
+            padding: 30px;
+            width: 100%;
+        }
+
+        @include lMobile{
+            padding: 30px;
+            width: 100%;
+        }
+
+        .phoneSvg{
+            stroke: orange;
+            stroke-width: 0.2;
+            position: absolute;
+            margin: auto;
+            z-index: -1;
+
+            svg{
+                @include sMobile{
+                    width: 250px;
+                    height: 250px;
+                }
+
+                @include mMobile{
+                    width: 250px;
+                    height: 250px;
+                }
+                
+                @include lMobile{
+                    width: 250px;
+                    height: 250px;
+                }
+
+                @include tablet{
+                    width: 350px;
+                    height: 350px;
+                }
+            }
+        }
+        
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            input, textarea{
+                padding: 20px;
+                background-color: transparent;
+                border: 1px solid white;
+                color: white;
+                border-radius: 5px;
+
+                @include sMobile{
+                    padding: 10px;
+                }
+                
+                @include mMobile{
+                    padding: 10px;
+                }
+
+                @include lMobile{
+                    padding: 10px;
+                }
+            }
+
+            button{
+                padding: 20px;
+                border: none;
+                background-color: orange;
+                cursor: pointer;
+                font-weight: 500;
+                border-radius: 5px;
+
+                @include sMobile{
+                    padding: 10px;
+                }
+
+                @include mMobile{
+                    padding: 10px;
+                }
+
+                @include lMobile{
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
