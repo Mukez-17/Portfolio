@@ -1,6 +1,8 @@
 import React from 'react';
 import './Hero.scss';
 import { motion } from 'framer-motion';
+import Dev from "../../../public/Mukesh.png";
+import Scroll from "../../../public/scroll.png";
 
 const textVariants = {
     initial:{
@@ -50,14 +52,14 @@ function Hero() {
                     <button type='button'><a href="#Portfolio">See the Latest Works</a></button>
                     <button type='button'><a href="#Contact">Contact Me</a></button>
                 </motion.div>
-                <motion.img src="public/scroll.png" alt="" variants={textVariants} animate="scrollButton" />
+                <motion.img src={Scroll} alt="" variants={textVariants} animate="scrollButton" />
             </motion.div>
         </div>
         <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
             Front End Developer and Java Developer
         </motion.div>
         <div className="imageContainer">
-            <img src="public/Mukesh.png" alt="" />
+            <img src={Dev} alt="" />
         </div>
     </div>
   )

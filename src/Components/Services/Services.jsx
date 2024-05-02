@@ -1,6 +1,7 @@
 import React from 'react';
 import './Services.scss';
 import { motion } from 'framer-motion';
+import People from "../../../public/people.webp";
 
 function Services() {
   return (
@@ -13,7 +14,7 @@ function Services() {
         </div>
         <div className="titleContainer">
             <div className="title">
-                <img src="public/people.webp" alt="" />
+                <img src={People} alt="" />
                 <h1>
                     <motion.b whileHover={{color:"orange"}}>Unique</motion.b> Ideas
                 </h1>
