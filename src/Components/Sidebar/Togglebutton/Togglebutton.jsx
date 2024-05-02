@@ -7,7 +7,7 @@ function Togglebutton({setOpen}) {
       <svg width="35px" height="35px" viewBox="-1 -2.5 19 19">
         <motion.path
           stroke="#000000" 
-          stroke-width="10" 
+          stroke-width="2" 
           stroke-linecap="round" 
           variants={{
             closed : {d:"M 2 2.5 L 20 2.5"},
